@@ -6,64 +6,82 @@
     <meta name="description" content="Site web du pédiatre à Marrakech pour soins d'enfants et vaccins">
     <meta name="keywords" content="pédiatre Marrakech, soins enfants, vaccins, rendez-vous">
     <title>Pédiatre à Marrakech</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Pédiatre à Marrakech</h1>
-        <nav>
-            <ul>
-                <li><a href="#services">Nos Services</a></li>
-                <li><a href="#equipe">Notre Équipe</a></li>
-                <li><a href="#bienvenue">Mot de Bienvenue</a></li>
-                <li><a href="#rendez-vous">Prendre Rendez-vous</a></li>
-                <li><a href="#contact">Infos et Contact</a></li>
-            </ul>
-        </nav>
+    <header class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <h1>Pédiatre à Marrakech</h1>
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="#services">Nos Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#equipe">Notre Équipe</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#bienvenue">Mot de Bienvenue</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#rendez-vous">Prendre Rendez-vous</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Infos et Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
-        <section id="services">
-            <h2>Nos Services</h2>
-            <p>Nous offrons une gamme complète de soins pédiatriques, y compris les consultations, les vaccinations, et les soins spécialisés pour les enfants.</p>
+    <div class="container mt-5">
+        <section id="services" class="my-5">
+            <h2 class="text-center">Nos Services</h2>
+            <img src="images/anouar-labo6.jpeg" class="img-fluid rounded mx-auto d-block" alt="Services">
+            <p class="text-center">Nous offrons une gamme complète de soins pédiatriques, y compris les consultations, les vaccinations, et les soins spécialisés pour les enfants.</p>
         </section>
 
-        <section id="equipe">
-            <h2>Notre Équipe</h2>
-            <p>Notre équipe de pédiatres expérimentés est dédiée à la santé et au bien-être de vos enfants.</p>
+        <section id="equipe" class="my-5">
+            <h2 class="text-center">Notre Équipe</h2>
+            <img src="images/anouar-labo4.jpeg" class="img-fluid rounded mx-auto d-block" alt="Équipe">
+            <p class="text-center">Notre équipe de pédiatres expérimentés est dédiée à la santé et au bien-être de vos enfants.</p>
         </section>
 
-        <section id="bienvenue">
-            <h2>Mot de Bienvenue</h2>
-            <p>Bienvenue sur notre site! Nous sommes ici pour vous fournir les meilleurs soins pédiatriques à Marrakech.</p>
+        <section id="bienvenue" class="my-5">
+            <h2 class="text-center">Mot de Bienvenue</h2>
+            <img src="images/baby3.jpg:shield" class="img-fluid rounded mx-auto d-block" alt="Bienvenue">
+            <p class="text-center">Bienvenue sur notre site! Nous sommes ici pour vous fournir les meilleurs soins pédiatriques à Marrakech.</p>
         </section>
 
-        <section id="rendez-vous">
-            <h2>Prendre Rendez-vous</h2>
-            <p>Pour prendre rendez-vous, veuillez nous appeler au <strong>+212 123 456 789</strong> ou utiliser notre formulaire en ligne.</p>
-            <form>
-                <label for="name">Nom:</label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="date">Date de Rendez-vous:</label>
-                <input type="date" id="date" name="date" required><br><br>
-                <input type="submit" value="Envoyer">
+        <section id="rendez-vous" class="my-5">
+            <h2 class="text-center">Prendre Rendez-vous</h2>
+            <img src="images/baby4.jpg" class="img-fluid rounded mx-auto d-block" alt="Prendre Rendez-vous">
+            <p class="text-center">Pour prendre rendez-vous, veuillez nous appeler au <strong>+212 123 456 789</strong> ou utiliser notre formulaire en ligne.</p>
+            <form class="text-center">
+                <div class="form-group">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date de Rendez-vous:</label>
+                    <input type="date" id="date" name="date" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
             </form>
         </section>
 
-        <section id="contact">
-            <h2>Infos et Contact</h2>
-            <p>Adresse: Avenue Mohamed V, Marrakech, Maroc</p>
-            <p>Téléphone: +212 123 456 789</p>
-            <p>Email: contact@pediatremarrakech.ma</p>
+        <section id="contact" class="my-5">
+            <h2 class="text-center">Infos et Contact</h2>
+            <img src="images/anouar-labo5.jpeg" class="img-fluid rounded mx-auto d-block" alt="Contact">
+            <p class="text-center">Adresse: Avenue Mohamed V, Marrakech, Maroc</p>
+            <p class="text-center">Téléphone: +212 123 456 789</p>
+            <p class="text-center">Email: contact@pediatremarrakech.ma</p>
         </section>
     </div>
 
-    <footer>
+    <footer class="bg-primary text-white text-center py-3">
         <p>&copy; 2024 Pédiatre à Marrakech. Tous droits réservés.</p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
